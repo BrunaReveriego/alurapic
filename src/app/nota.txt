@@ -1,0 +1,24 @@
+Componentes -> Objetos que guardam comportamento (o que fazer), apresentação, css e HTML
+
+Componente -> Classe typescript
+
+Decorator -> Sintaxe que carrega uma meta informação sobre as classes
+
+Data-binding -> Associação de dados {{ title }}
+
+Comandos:
+
+ng serve --open -> executar em localhost
+
+utiliza-se {{ }} dentro das tags e [] para atributos.
+
+módulos -> mandeiras de agrupar componentes e afins
+
+Ex: em app.module 
+@NgModule({
+  declarations: [
+    AppComponent,
+    PhotoComponent
+  ],
+
+  PhotoComponent passa a ser acessível ao AppComponent
