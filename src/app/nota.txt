@@ -22,3 +22,5 @@ Ex: em app.module
   ],
 
   PhotoComponent passa a ser acessível ao AppComponent
+
+  Gerar componente via comando => ng generate component photos/photos-list
