@@ -1,0 +1,12 @@
+<!-- one way data-bind -->
+<!-- dados fluem do componente para o template -->
+
+<!-- diretivas *ngfor -->
+
+<ol class="list-unstyled row">
+  <li *ngFor="let photo of photos" class="col-4">
+      <ap-photo  [url]="photo.url" 
+      [description]="photo.description">
+      </ap-photo>
+  </li>
+</ol>
