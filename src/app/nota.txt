@@ -27,3 +27,6 @@ Ex: em app.module
 
   BrowserModule -> Traz todas diretivas para que a aplicação rode no navegador
   
+  criacao module errors -> ng generate module errors
+
+  criacao component -> ng generate component errors/not-found
