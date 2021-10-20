@@ -1,17 +1,9 @@
-<div class="text-center mt-3 mb-3">
-    <!--da_view_para_componente-->
-    <form>
-        <i aria-hidden="true" class="fa fa-search me-1"></i>
-        <input
-            class="rounded" type="search"
-            placeholder="search..."
-            autofocus
-            (keyup)="debounce.next($event.target.value)">
-    </form>
-</div>
-{{  filter | uppercase }}
-<ap-photos [photos]="photos | filterByDescription: filter"></ap-photos>
-
+<h1 style="background:lightgray; text-align:center;" apDarkenOnHover brightness="20%">Alurapic</h1>
+<ap-search 
+    (onTyping)="filter = $event" [value]="filter"></ap-search>
+<!-- {{  filter | uppercase }} -->
+<ap-photos 
+    [photos]="photos | filterByDescription: filter"></ap-photos>
 <ap-load-button (click)="load()" 
                 [hasMore]="hasMore">
 </ap-load-button>
